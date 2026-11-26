@@ -1,0 +1,157 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #14213d;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fca311;
+}
+
+/* Home Section */
+#home {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #14213d, #0077b6);
+    color: white;
+    padding: 30px;
+}
+
+#home h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.btn {
+    background-color: #fca311;
+    color: #14213d;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+/* About Section */
+#about {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: white;
+}
+
+#about h1 {
+    font-size: 35px;
+    color: #14213d;
+    margin-bottom: 25px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: auto;
+}
+
+/* Contact Section */
+#contact {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #eaf2f8;
+}
+
+#contact h1 {
+    font-size: 35px;
+    color: #14213d;
+    margin-bottom: 25px;
+}
+
+#contact p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #14213d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    #home h1 {
+        font-size: 30px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    #about, #contact {
+        padding: 50px 7%;
+    }
+}
